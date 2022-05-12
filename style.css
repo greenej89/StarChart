@@ -84,7 +84,7 @@ button {
     padding: 0px 10px;
     /* background-color: lime; */
     height: 50px;
-    width: 200px;
+    min-width: 150px;
 }
 
 .star {
