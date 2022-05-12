@@ -9,93 +9,104 @@
     <title>Super Stars</title>
 </head>
 <body>
-    <div id="header">
-
-    </div>
+    <div id="header"></div>
     <div id="main">
-        <div id="page-title">
-            <h1><span id="name">Jessica</span>'s Daily Stars</h1>
+    <div id="page-title">
+        <h1><span id="name">Jessica</span>'s Daily Stars</h1>
+    </div>
+    <div class="stars-container">
+        <div class="sidebar">
+            <!-- <h2 id="daily-tasks" class="col-header">Daily Tasks</h2> -->
+            <form id="task-list" action="/process" method="post">
+                <input type="text" id="daily-tasks" name="task-header" class="col-header" placeholder = "Daily Tasks"><br>
+                <label for="task-1">I will</label><input type="text" id="task-1" name="task1" class="task" placeholder = "Edit Task 1"><br>
+                <label for="task-2">I will</label><input type="text" id="task-2" name="task2" class="task" placeholder = "Edit Task 2"><br>
+                <label for="task-3">I will</label><input type="text" id="task-3" name="task3" class="task" placeholder = "Edit Task 3"><br>
+                <label for="task-4">I will</label><input type="text" id="task-4" name="task4" class="task" placeholder = "Edit Task 4"><br>
+                <label for="task-5">I will</label><input type="text" id="task-5" name="task5" class="task" placeholder = "Edit Task 5"><br>
+                <label for="task-6">I will</label><input type="text" id="task-6" name="task6" class="task" placeholder = "Edit Task 6"><br>
+                <label for="task-7">I will</label><input type="text" id="task-7" name="task7" class="task" placeholder = "Edit Task 7">
+            </form>
         </div>
-        <div class="stars-container">
-            <div id ="col-1" class="col">
-                <p class="day">Monday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-2" class="col">
-                <p class="day">Tuesday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-3" class="col">
-                <p class="day">Wednesday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-4" class="col">
-                <p class="day">Thursday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-5" class="col">
-                <p class="day">Friday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-6" class="col">
-                <p class="day">Saturday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
-            <div id="col-7" class="col">
-                <p class="day">Sunday</p>
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-                <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
-            </div>
+        <div id ="col-1" class="col">
+            <p class="col-header">Monday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
         </div>
-        <div id="footer" >
-            <h2 id="reward">When I get &nbsp<span id="star-goal">10</span> &nbsp stars, &nbsp I will get &nbsp<span id="reward-text">a reward</span>.</h2> 
+        <div id="col-2" class="col">
+            <p class="col-header">Tuesday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
         </div>
-        <div id="edit-links">
-            <button id="change-name" href="#" onclick="editText('#name')">Edit Name</a>
-            <button id="change-name" href="#" onclick="editText('#star-goal')">Edit Star Goal</a>
-            <button id="change-reward" href="#" onclick="editText('#reward-text')">Edit Reward</a>
+        <div id="col-3" class="col">
+            <p class="col-header">Wednesday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
         </div>
+        <div id="col-4" class="col">
+            <p class="col-header">Thursday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+        </div>
+        <div id="col-5" class="col">
+            <p class="col-header">Friday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+        </div>
+        <div id="col-6" class="col">
+            <p class="col-header">Saturday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+        </div>
+        <div id="col-7" class="col">
+            <p class="col-header">Sunday</p>
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+            <img class="star" src="./assets/gray-star.png" alt="star" onclick="awardStar(this)">
+        </div>
+    </div>
+    <div id="footer" >
+        <h2 id="reward">When I get &nbsp<span id="star-goal">10</span> &nbsp stars, &nbsp I will get &nbsp<span id="reward-text">a reward</span>.</h2> 
+    </div>
+    <div id="edit-links">
+        <button id="change-name" href="#" onclick="editText('#name')">Edit Name</a>
+        <button id="change-name" href="#" onclick="editText('#star-goal')">Edit Star Goal</a>
+        <button id="change-reward" href="#" onclick="editText('#reward-text')">Edit Reward</a>
+    </div>
     </div>
 
 

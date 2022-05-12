@@ -1,12 +1,14 @@
 * {
     margin: 0px;
     border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 #main {
     margin: 0px auto;
     background-color: white;
-    width: 700px;
+    width: 1000px;
 }
 
 /* a {
@@ -22,6 +24,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 #footer, #reward, #reward-text {
     background-color: blue;
@@ -40,11 +43,50 @@ button {
     margin-top: 5px;
 }
 
+
+
+/* Format columns in star container */
+.stars-container {
+    display: flex;  /* Create columns */
+    height: 420px;
+}
+.sidebar {
+    flex: 3;
+}
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col-header {
+    height: 50px;
+    text-align: center;
+    padding: 12px 0px;
+    font-size: 20px;
+}
+#daily-tasks {
+    text-align: left;
+}
+
+
+#task-list {
+    list-style: none;
+}
+#task-list label {
+    /* background-color: aqua; */
+    display: inline-block;
+    padding-left: 30px;
+}
+#task-list input {
+    margin-left: 10px;
+    padding: 0px 10px;
+    /* background-color: lime; */
+    height: 50px;
+    width: 200px;
+}
+
 .star {
     width: 50px;
     height: 50px;
-}
-.stars-container {
-    display: flex;  /* Create columns */
-    height: 400px;
 }
