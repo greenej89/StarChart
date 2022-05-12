@@ -51,6 +51,7 @@ button {
     height: 420px;
 }
 .sidebar {
+    min-width: 300px;
     flex: 3;
 }
 .col {
